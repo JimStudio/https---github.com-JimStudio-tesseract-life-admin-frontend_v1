@@ -3,6 +3,9 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <div>
+      <Head>
+         <title>Work Flow</title>
+       </Head>
     <img
       className="mx-auto h-12 w-auto"
       src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
