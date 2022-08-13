@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function Home() {
+export default function Login() {
   return (
     <div className='container'>
       <Head>
@@ -11,7 +11,7 @@ export default function Home() {
           rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"></link>
        </Head>
         <img
-             className="rounded mx-auto d-block w-25 p-3 mt-5"
+             className="rounded mx-auto d-block w-30 p-3 mt-5"
               src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                alt="Workflow"/>
                 <h2 className="mb-5 text-center font-extrabold text-gray-900">Sign in to your account</h2>
@@ -25,16 +25,18 @@ export default function Home() {
                              <input id="password" name="password" type="password" placeholder="Password"  className="form-control col-sm-10" 
                                aria-label="Large"></input>
          </div>
-         <div className='container row'>
-             <div className="form-check col-md-5">
-              <input type="checkbox" className="form-check-input" id="exampleCheck1"></input>
-              <label className="form-check-label">Check me out</label>
-         </div>
-         <div className="form-check col-md-7 ">
-         <a href="#" className="link-primary "> Forgot your password?</a>
-         </div>
-         </div>
-             <button type="submit" className="btn btn-primary">Submit</button>
+
+         <div className="d-flex justify-content-between align-items-center">
+            <div className="form-check mb-0">
+              <input className="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+              <label className="form-check-label">
+              Check me out
+              </label>
+            </div>
+            <a href="#!" >Forgot your password?</a>
+          </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block w-100 mt-3">Sign in</button>
+              
         </form>
         
         </div>
